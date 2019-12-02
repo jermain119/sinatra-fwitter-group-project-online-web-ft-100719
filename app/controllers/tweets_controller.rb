@@ -1,6 +1,7 @@
 class TweetsController < ApplicationController
 
-get '/' do
-    erb :index
+get '/tweets' do #index
+  @tweets =Tweet.all 
+ 
   end
 end
